@@ -14,7 +14,7 @@
  
  var svgContainer = d3.select("body").append("svg")
                                      .attr("width", 650)
-                                     .attr("height", 500);
+                                     .attr("height", 1000);
  
  var circles = svgContainer.selectAll("circle")
                           .data(jsonCircles)
@@ -29,9 +29,15 @@
  
  var rectangle = svgContainer.append("rect")
                              .attr("x", 10)
-                           .attr("y", 10)
-                           .attr("width", 50)
-                           .attr("height", 100);
+                           .attr("y", 600)
+                           .attr("width", 100)
+                           .attr("height", 50);
+ 
+ var rectangle2 = svgContainer.append("rect")
+                             .attr("x", 10)
+                           .attr("y", 700)
+                           .attr("width", 150)
+                           .attr("height", 50);
           
 
 </script>
